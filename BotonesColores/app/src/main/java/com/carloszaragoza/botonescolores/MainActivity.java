@@ -1,10 +1,12 @@
 package com.carloszaragoza.botonescolores;
 
+import androidx.annotation.LongDef;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.compose.material.Colors;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -12,18 +14,25 @@ import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    Button btn_reset;
+    GridLayout grid;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         añadeHijos();
         recorrer();
-
-
+        btn_reset = findViewById(R.id.btn_reset);
+        btn_reset.setOnClickListener(this);
     }
     public void recorrer(){
         View v;
         GridLayout grid = findViewById(R.id.miGrid);
+        this.grid = grid;
         for (int i = 0; i < grid.getChildCount(); i++) {
             v=grid.getChildAt(i);
             System.out.println("objeto:"+ v.toString());
@@ -36,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void añadeHijos(){
         GridLayout grid = (GridLayout) findViewById(R.id.miGrid);
         Button button;
-        for(int i=0;i<1000;i++) {
+        for(int i=0;i<50;i++) {
             button = new Button(this);
             button.setLayoutParams(new ViewGroup.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,
@@ -53,13 +62,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         GridLayout grid = (GridLayout) findViewById(R.id.miGrid);
 
+
         if (view.getClass().getSimpleName().equals("Button")) {
             /*Button btn = (Button) view;
             btn.setBackgroundColor(Color.WHITE);*/
             grid.removeView(view);
         }
 
-
+        if(this.grid.getChildCount()==0){
+            if(view.getId() == btn_reset.getId()){
+                añadeHijos();
+                recorrer();
+            }
+        }
     }
 
 
