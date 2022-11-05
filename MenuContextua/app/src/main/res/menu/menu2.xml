@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_delete"
+        android:title="aniquilar"
+        android:id="@+id/aniquilar"
+        ></item>
+    <item android:icon="@android:drawable/ic_menu_edit"
+        android:title="encerrar"
+        android:id="@+id/encerrar">
+        ></item>
+    <item android:icon="@android:drawable/sym_call_incoming"
+        android:title="salvar"
+        android:id="@+id/salvar">
+        ></item>
+</menu>

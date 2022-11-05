@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_stark">
+        <item>stark_1</item>
+        <item>stark_2</item>
+        <item>stark_3</item>
+        <item>stark_4</item>
+    </array>
+
+    <array name="list_lannister">
+        <item>lannister_1</item>
+        <item>lannister_2</item>
+        <item>lannister_3</item>
+        <item>lannister_4</item>
+    </array>
+</resources>
