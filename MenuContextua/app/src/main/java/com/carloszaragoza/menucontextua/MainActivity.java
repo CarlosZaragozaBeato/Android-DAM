@@ -16,10 +16,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
 
     ActionMode mActionMode;
     ListView starks;
+    String valor ="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 getResources().getStringArray(R.array.list_lannister));
         listaLannisters.setAdapter(adaptador2);
         listaLannisters.setOnItemClickListener(this);
+        listaLannisters.setOnItemSelectedListener(this);
+
         registerForContextMenu(starks);
 
     }
@@ -76,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
+
+        String []lista  =getResources().getStringArray(R.array.list_lannister);
+        valor = lista[i];
         view.setSelected(true);
     }
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
@@ -84,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         public boolean onCreateActionMode(ActionMode mode, Menu menu) {
             // Inflate a menu resource providing context menu items
             MenuInflater inflater = mode.getMenuInflater();
-            inflater.inflate(R.menu.menu2, menu);
+            inflater.inflate(R.menu.menu_action, menu);
             return true;
         }
         // Called each time the action mode is shown. Always called after onCreateActionMode, but
@@ -101,13 +107,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 case R.id.aniquilar:
                     //hay que crear un Aniquilar() para
                     //recorrer todos los elementos seleccionado (checked) en la listView
-                    Toast.makeText(getApplicationContext(), "Hemos aniquilado a algún Lannister",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Hemos aniquilado a"+valor,Toast.LENGTH_LONG).show();
                     return true;
                 case R.id.encerrar:
-                    Toast.makeText(getApplicationContext(), "Hemos encerrado a algún Lannister", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Hemos encerrado a "+valor, Toast.LENGTH_LONG).show();
                     return true;
                 case R.id.salvar:
-                    Toast.makeText(getApplicationContext(), "Hemos salvado a algún Lannister", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Hemos salvado a "+valor, Toast.LENGTH_LONG).show();
                     return true;
                 default:
                     return false;
@@ -119,4 +125,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             mActionMode = null;
         }
     };
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
 }
