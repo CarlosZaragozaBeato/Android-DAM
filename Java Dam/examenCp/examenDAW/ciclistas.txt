@@ -1,0 +1,8 @@
+Juan;Astana;49;Hombre;80
+Maria;Sky;49;Mujer;60
+Jorge;Movistar;49;Hombre;85
+Raquel;Sky;52;Mujer;70
+Pepe;Astana;52;Hombre;65
+Carlos;Movistar;49;Hombre;90
+Eva;Sky;49;Mujer;52
+Ana;Movistar;49;Mujer;51

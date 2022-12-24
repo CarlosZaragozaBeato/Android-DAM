@@ -1,0 +1,1 @@
+[{"nombre":"Sevilla","presupuesto":22222.0,"puntos":12},{"nombre":"Madrid","presupuesto":123.0,"puntos":22},{"nombre":"Barcelona","presupuesto":2.0,"puntos":10}]

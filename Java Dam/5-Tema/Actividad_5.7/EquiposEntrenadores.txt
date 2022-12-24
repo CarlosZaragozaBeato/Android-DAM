@@ -1,0 +1,10 @@
+Equipo:Valencia:Gracia:60.0
+Equipo:Barcelona:Koeman:60.0
+Equipo:Levante:Vicente:25.0
+Equipo:Madrid:Zidane:80.0
+Equipo:Sevilla:Lopetegui:33.0
+Entrenador:Zidane:44
+Entrenador:Koeman:50
+Entrenador:Lopetegui:46
+Entrenador:Paco:35
+Entrenador:Gracia:54

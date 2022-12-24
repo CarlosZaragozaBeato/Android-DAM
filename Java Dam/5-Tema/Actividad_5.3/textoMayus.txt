@@ -1,0 +1,11 @@
+¿qué es lorem ipsum?
+
+lorem ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. lorem ipsum ha sido el texto de 
+relleno estándar de las industrias desde el año 1500, cuando un impresor (n. del t. persona que se dedica a la imprenta)
+ desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. no sólo 
+sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente 
+igual al original. fue popularizado en los 60s con la creación de las hojas "letraset", las cuales contenian pasajes de 
+lorem ipsum, y más recientemente con software de autoedición, como por ejemplo aldus pagemaker, el cual incluye 
+versiones de lorem 
+
+

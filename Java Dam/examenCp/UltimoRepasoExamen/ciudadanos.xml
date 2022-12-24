@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ciudadanos>
+  <ciudadano>
+    <nombre>CARLOS</nombre>
+    <provincia>MADRID</provincia>
+    <sueldo>2000</sueldo>
+    <hijos>1</hijos>
+  </ciudadano>
+  <ciudadano>
+    <nombre>JUAN</nombre>
+    <provincia>MADRID</provincia>
+    <sueldo>3000</sueldo>
+    <hijos>2</hijos>
+  </ciudadano>
+  <ciudadano>
+    <nombre>ANTONIO</nombre>
+    <provincia>ALBACETE</provincia>
+    <sueldo>4000</sueldo>
+    <hijos>3</hijos>
+  </ciudadano>
+  <ciudadano>
+    <nombre>ANA</nombre>
+    <provincia>ALBACETE</provincia>
+    <sueldo>6000</sueldo>
+    <hijos>5</hijos>
+  </ciudadano>
+  <ciudadano>
+    <nombre>LUISA</nombre>
+    <provincia>ALICANTE</provincia>
+    <sueldo>6000</sueldo>
+    <hijos>0</hijos>
+  </ciudadano>
+  <ciudadano>
+    <nombre>PEPE</nombre>
+    <provincia>MADRID</provincia>
+    <sueldo>1000</sueldo>
+    <hijos>1</hijos>
+  </ciudadano>
+</ciudadanos>
