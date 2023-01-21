@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"ut5.practica1","l":"ALUMNO"},{"p":"ut5.practica1","l":"Ciclo"},{"p":"ut5.practica1","l":"DNI"},{"p":"ut5.practica1","l":"Modulo"},{"p":"ut5.practica1","l":"Persona"},{"p":"ut5.practica1","l":"Profesor"},{"p":"ut5.practica1","l":"UT5Practica1"}];updateSearchResults();

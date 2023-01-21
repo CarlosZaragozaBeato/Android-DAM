@@ -1,3 +1,0 @@
-33,    22
-Zaragoza,   Carlos
-22, car

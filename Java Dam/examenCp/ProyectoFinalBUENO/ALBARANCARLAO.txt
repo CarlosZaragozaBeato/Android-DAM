@@ -1,5 +1,0 @@
-Nombre: carlao
-Domicilio: C/ Esperanza, sn
-Poblacion: Ciudad Real
-Cantidad: 144.0
-Importe: 8863,25

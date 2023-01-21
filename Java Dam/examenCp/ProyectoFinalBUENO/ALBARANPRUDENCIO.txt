@@ -1,5 +1,0 @@
-Nombre: Prudencio
-Domicilio: C/ Esperanza, sn
-Poblacion: Albacete
-Cantidad: 310.0
-Importe: 27830,00

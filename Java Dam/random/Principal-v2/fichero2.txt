@@ -1,4 +1,0 @@
-22,      11
-Zaragoza,     Carlos
-z,   car
-Infantes Hervas,  DAvid
